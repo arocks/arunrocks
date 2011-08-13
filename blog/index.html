@@ -1,0 +1,30 @@
+---
+layout: manyposts
+title: Blog
+---
+{% for post in site.posts limit:4 %}
+<section>
+<article role="post"><header class="postdate"> 
+datetime="{{ post.date  | date:"%Y-%m-%d"}}" pubdate
+    <time pubdate datetime="{{ post.date  | date:"%Y-%m-%d"}}"> <abbr title="{{ post.date  | date:"%Y-%m-%d"}}">
+      <span class="dd">{{ post.date  | date:"%d"}}</span> {{ post.date  | date:"%m %Y"}} </abbr>
+    </time> 
+</header> 
+<section> 
+
+<h1><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
+{{ post.content }}
+<!-- ================================================================================ -->
+<footer>
+    <!-- categories --> 
+    <ul class="tags group"> 
+        <li><a href="/code/developpeurs_sans_frontieres" rel="bookmark tag">code</a></li> 
+        <li><a href="/web-dev/developpeurs_sans_frontieres">web-dev</a></li> 
+        <li><a href="/code-is-art/developpeurs_sans_frontieres">code-is-art</a></li> 
+    </ul> 
+</footer>
+
+
+{% endfor %}
+
+<p><a href="/blog/all">More posts in my archives &raquo;</a></p>
