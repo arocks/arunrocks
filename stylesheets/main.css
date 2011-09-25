@@ -365,6 +365,15 @@ sub {
     *zoom: 1;
 }
 
+img.floatleft { 
+    float: left; 
+    margin: 4px; 
+}
+
+img.floatright { 
+    float: right; 
+    margin: 4px; 
+}
 /*=======================================*/
 /* Primary styles
 ---------------------------------------- */
@@ -498,7 +507,8 @@ section[role="container"]{
 }
 /* Custom Fonts */
 
-article[role="post"] h1, article[role="post"] h2, article[role="post"] h3, article[role="post"] h4
+article[role="post"] h1, article[role="post"] h2, article[role="post"] h3, article[role="post"] h4, 
+aside[role="sidebar"] h1, aside[role="sidebar"] h2, aside[role="sidebar"] h3
 {
     font-family: 'Arvo', serif;
 }
@@ -651,12 +661,21 @@ aside[role="sidebar"] h1 {
     text-transform: uppercase;
     text-shadow: 2px 1px 0px #fff;
 }
+/* Remove dropcap */
+article[role="sidebar"] h1 + p:first-letter {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 1.5em 0;
+    margin-bottom: 1em;
+}
 aside[role="sidebar"] ul {
     list-style: none;
 }
 aside[role="sidebar"] li {
     font-size: 0.8em; /* 14px */ 
     line-height: 1em; /* 21px */ 
+    margin: 0 0 1.5em 0;
+    margin-bottom: 1em;
 }
 .social ul li a {
     padding-left: 20px;
@@ -701,6 +720,7 @@ footer[role="siteinfo"] address {
     font-size: 0.9em;
     margin: 1em 0 0.1em 0;
 }
+
 /* Media queries
 ---------------------------------------- */
 

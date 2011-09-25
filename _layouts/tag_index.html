@@ -1,9 +1,22 @@
 ---
 layout: base
+title: 'Tags Archive'
 ---
- 
-{{ content }}
-
+<article role="post">
+<h1> Tag: {{ page.tag }} </h1>
+<ol>
+  {% for post in site.tags[page.tag] %}
+  <li>
+  <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+  <div class="post-meta">
+    <span class="date">{{ post.date | date_to_string }} | </span>
+	<span class="categories">
+	  Tags: {% for tag in post.tags limit: 3 %}<a href="/tags/{{tag | replace:' ', '-' | downcase }}">{{ tag }}{% if forloop.last == false %}, {%endif %}</a> {% endfor %}
+	</span>
+  </div>
+  {% endfor %}
+  </li>
+</ol>
 <!-- ================================================================================ -->
 <aside role="sidebar"> 
 <section class="social"> 

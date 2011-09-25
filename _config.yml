@@ -1,6 +1,5 @@
 name:      ArunRocks
 url:       http://www.arunrock.com
-slogan:    Partly Arty, Partly Geek
 markdown:  rdiscount
 pygments: true
 permalink: pretty
