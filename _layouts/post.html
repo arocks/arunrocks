@@ -28,7 +28,7 @@ layout: base
       {% else %} 
         <li><a rel="previous">No Prev <br><sub></sub></a></li> 
       {% endif %} 
-        <li><a rel="pagetop" href="#top">Top</a></li> 
+        <li><a rel="pagetop" href="/blog/">Main</a></li> 
       {% if page.next.url %} 
         <li><a rel="next" href="{{page.next.url}}">Next <br><sub>{{page.next.title}}</sub></a></li> 
       {% else %} 
@@ -39,6 +39,7 @@ layout: base
 </section> 
 <section role="comments"> 
 <h1>Comments</h1> 
+<a rel="pagetop" href="#top">Go back to top</a> 
 </section> 
 <!-- ================================================================================ -->
 <aside role="sidebar"> 

@@ -3,7 +3,7 @@ url:       http://www.arunrocks.com
 markdown:  rdiscount
 pygments: true
 permalink: pretty
-lsi: true
+lsi: false
 tag_dir: tags
 exclude: [README.markdown, Rakefile]
 rdiscount
