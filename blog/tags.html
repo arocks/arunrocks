@@ -1,0 +1,13 @@
+---
+layout: manyposts
+title: All tags
+---
+<article role="post">
+<h1> All tags </h1>
+
+
+{% for tag in site.tags limit:4 %}
+    <strong><a href="/tags/{{tag | first | replace:' ', '-' | downcase }}">{{ tag | first | downcase }}</a></strong>,
+{% endfor %}
+
+</article>
