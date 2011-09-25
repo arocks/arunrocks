@@ -6,7 +6,7 @@ title: All tags
 <h1> All tags </h1>
 
 
-{% for tag in site.tags limit:4 %}
+{% for tag in site.tags %}
     <strong><a href="/tags/{{tag | first | replace:' ', '-' | downcase }}">{{ tag | first | downcase }}</a></strong>,
 {% endfor %}
 
