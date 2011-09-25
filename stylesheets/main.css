@@ -455,6 +455,18 @@ header[role="banner"] a.cur {
     text-shadow: 2px 1px 0px #333;
 }
 
+/* Show interesting banner animations */
+
+header[role="banner"] #stage {
+    position: absolute;
+    background: url(../images/coffee-cup.png) center bottom no-repeat;
+    display: block;
+    width: 179px;
+    height: 165px;
+    left: 40%;
+    top: 135px;
+}
+
 /* Main post */
 
 section[role="container"]{
