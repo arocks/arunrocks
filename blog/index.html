@@ -14,12 +14,12 @@ title: Blog
 {{ post.content }}
 <!-- ================================================================================ -->
 <footer>
-    <!-- categories --> 
+    <!-- tags --> 
+    {% for tag in page.tags limit: 3 %}
     <ul class="tags group"> 
-        <li><a href="/code/developpeurs_sans_frontieres" rel="bookmark tag">code</a></li> 
-        <li><a href="/web-dev/developpeurs_sans_frontieres">web-dev</a></li> 
-        <li><a href="/code-is-art/developpeurs_sans_frontieres">code-is-art</a></li> 
+        <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag">{{ tag }}</a></li> 
     </ul> 
+    {% endfor %}
 </footer>
 </article>
 

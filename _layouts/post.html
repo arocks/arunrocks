@@ -1,0 +1,24 @@
+---
+layout: base
+---
+ 
+<article role="post"><header class="postdate"> 
+    <time pubdate datetime="{{ page.date  | date:"%Y-%m-%d"}}"> <abbr title="{{ page.date  | date:"%A, %d %B %Y"}}">
+      <span class="dd">{{ page.date  | date:"%d"}}</span> {{ page.date  | date:"%b %Y"}} </abbr>
+    </time> 
+</header> 
+<section> 
+
+<h1><a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a></h1>
+{{ content }}
+<!-- ================================================================================ -->
+<footer>
+    <!-- tags --> 
+    <ul class="tags group"> 
+    {% for tag in page.tags limit: 3 %}
+        <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag">{{ tag }}</a></li> 
+    {% endfor %}
+    </ul> 
+</footer>
+</article>
+
