@@ -5,6 +5,6 @@ markdown:  rdiscount
 pygments: true
 permalink: pretty
 tag_dir: tags
-exclude: [README.markdown]
+exclude: [README.markdown, Rakefile]
 rdiscount
   extensions: [smart]

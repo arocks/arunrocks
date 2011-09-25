@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<!-- ================================= arun ravindran from arunrocks.com ============ -->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--> 
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--> 
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]--> 
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]--> 
+<head> 
+<title>{{ page.title }} | arunrocks.com</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" /> 
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css?version=1" /> 
+<link rel="alternate" type="application/rss+xml" href="/rss" title="arunrocks" /> 
+<link rel="canonical" href="{{ page.url }}" /> 
+<link rel="shortcut icon" href="/favicon.ico">
+{% if page.previous %}<link rel="prev" href="{{ page.previous.url }}" /> {% endif %}
+{% if page.next %}<link rel="next" href="{{ page.next.url }}" /> {% endif %}
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="./javascript/respond.min.js"></script>
+</head>
+
+<!-- ================================================================================ -->
+<body>
+<a name="top"></a>
+<header role="banner"> 
+    <h1 role="logo"><a href="/" rel="index"> 
+        arunrocks.com
+    </a></h1> 
+    <nav class="group"><ul> 
+        <li><a class="cur" href="/blog">Blog          <br><sub>Tech & Tales</sub></a></li> 
+        <li><a href="/games">Games        <br><sub>Play my Games</sub></a></li> 
+        <li><a href="/projects">Films     <br><sub>Short Movies</sub></a></li> 
+        <li><a href="/gallery">Photos     <br><sub>Gallery of Snaps</sub></a></li> 
+    </ul></nav> 
+</header> 
+<!-- ================================================================================ -->
+<section role="container">
+{{ content }}
+</section>
+<!-- ================================================================================ -->
+<footer role="siteinfo"> 
+<div class="group">
+<p class="sitelinks"> Browse: 
+  <a href="#">Archives</a>, 
+  <a href="#">Tags</a> 
+  Or Search
+</p>
+<form role="search" method="get" action="https://duckduckgo.com"> 
+  <input type="hidden" name="sites" value="arunrocks.com" /> 
+  <input type="search" name="q" placeholder="search this site" /> 
+  <input type="submit" value="Go" /> 
+</form> 
+</div>
+<address class="vcard author">
+  Design and Code by
+  <a href="http://arunrocks.com" class="fn url">Arun Ravindran</a>
+  | Built using
+  <a href="https://github.com/mojombo/jekyll/wiki">Jekyll</a>
+  | Hosted on
+  <a href="https://customers.asmallorange.com/aff.php?aff=15201">asmallorange</a>
+</address>
+</footer> 
+</body>
+</html>
+<!-- ================================================================================ -->

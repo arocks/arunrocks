@@ -1,0 +1,11 @@
+# mac stuff
+.DS_Store
+
+# emacs stuff
+*~
+\#*
+.DS_Store
+
+# don't store the generated site
+_site/
+
