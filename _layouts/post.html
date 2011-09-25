@@ -43,13 +43,18 @@ layout: base
 <!-- ================================================================================ -->
 <aside role="sidebar"> 
 {% include about_me.html %}
+
+{% if site.related_posts %}
 <section class="related"> 
   <h1>Related Posts</h1> 
   <ul> 
-    <li><a href="#">CSS with vertical rhythm</a></li> 
-    <li><a href="#">HOWTO: A FreeBSD radio station web server</a></li> 
+    {% for post in site.related_posts limit: 3 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li> 
+    {% endfor %}
   </ul> 
 </section> 
+{% endif %}
+
 </aside> 
 </article> 
 
