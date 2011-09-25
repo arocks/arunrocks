@@ -1,0 +1,16 @@
+---
+author: Arun Bhai
+date: '1980-06-07 12:00:00'
+layout: post
+slug: about-me
+status: publish
+tags: [general]
+title: About Me
+wordpress_id: '24'
+---
+
+This is outdated.
+
+Read about me in [my About page](http://www.arunrocks.com/blog/about/ "About Arun Ravindran")
+
+Note: Just retaining this page to keep track of my age ;)<!--f1025ca928bf3506c89dce7538aa7d6d-->

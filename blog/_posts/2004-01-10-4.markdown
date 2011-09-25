@@ -1,0 +1,14 @@
+---
+author: Arun Bhai
+date: '2004-01-10 19:10:57'
+layout: post
+slug: '4'
+status: publish
+tags: [general]
+title: None
+wordpress_id: '4'
+---
+
+Hi world,
+
+I've started this blog today i.e. Jan 10 2004. I'll be updating you very shortly about myself. So kindly wait.<!--ac77d9639f72c00f353f292b2c3aa4d1-->

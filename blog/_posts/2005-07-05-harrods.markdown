@@ -1,0 +1,74 @@
+---
+author: Arun Bhai
+date: '2005-07-05 02:21:08'
+layout: post
+slug: harrods
+status: publish
+tags: [gaming, general]
+title: Super-small Sized Me
+wordpress_id: '63'
+---
+
+This weekend, I was humbled in more ways than one. First while
+visiting the [London Science Museum][1], when one gets to see a spell
+binding display of the relentless scientific pursuits of Man. Despite
+spending a good 2 hours inside, we barely managed to cover the ground
+floor of this five storied treasure house of knowledge. And second,
+when I realised that, whenever one feels financially complacent; pay a
+visit to [Harrods][2] and you'll swear never to use the expression
+"over-priced" in your life.
+
+[1]: http://www.sciencemuseum.org.uk/ "Science Museum Site"
+[2]: http://www.harrods.com/ "Welcome to the world's most famous department store"
+
+Harrods is the world's most recognised department store spread over
+*five acres* right in the heart of London. Here you can see heaps of
+well earned money frittered over the most trivial or sometimes futile
+purchases. Like for e.g. in a "Sale" a pen for £250 (twice the price
+of a mid-range digital cameras) or a coffee table with a chess board
+print (not even carved) for £10,000. However, what would probably
+surprise you is - simply, the crowd. Yes, hundreds of rooms filled
+with buyers busy filling up their umpteenth green 'Harrods' shopping
+bag. If you hadn't noticed the price tags, this would have passed for
+an ordinary departmental store.
+
+<img src="/blog/img/london_ubs_buildg.jpg" alt="To Hell with Work: Our Office Building" class="centered" /></a>
+
+<img src="/blog/img/london_sachin_anant_arun.jpg" alt="Rockstars: Anant Me and Sachin" class="centered" />
+
+<img src="/blog/img/london_took_long.jpg" alt="Patient Wait: On the Barbican Highwalk" class="centered" />
+
+
+Few minutes later, you look around. Your fears get confirmed. You are
+indeed the only person who is *not* shopping. So, I decide; while I'm
+here, I better observe the ways and manners of the elite. Most
+disappointingly, they look exactly like the ordinary London
+milieu. Most of them in casuals like sneakers (horror!) and jeans. Yes
+my friends you have to look out for subtle giveaways like designer
+labels or rolex watches to spot the real cash puppies. Hints that
+never escape the sharp eyes of the shop assistants. So, if you are the
+right crowd, you'll perhaps be treated like a prince (most probably
+you are already one;) ). But I'm far from one, so...
+
+<img src="/blog/img/london_difference_engine.jpg" alt="It made all the Difference: Difference Engine" class="centered" />
+
+<img src="/blog/img/london_perfect_sphere.jpg" alt="Can\&#39;t Get A More Smoother Finish than this: World most perfect sphere" class="centered" />
+
+<img src="/blog/img/london_albert_museum.jpg" alt="The Gang at Victoria Albert" class="centered" />
+
+The next planned destination - Hyde park, was sealed due to the
+[Live8][3] concert. Though a major event here, the whole idea seemed
+shallow and pointless to me. In fact, it was not even a fund raising
+event like 'Live Aid'. People seemed to have watched the whole 12 hour
+show and stayed up most of the night. In fact, I did stay up too, but
+for my game project :D Was fighting some Ogre-Blender related issues,
+but I got my issues solved thanks to the excellent [Ogre3d][4]
+support. Yet another day is saved, thanks to the excellent support of
+open-source projects :).
+
+[3]: http://en.wikipedia.org/wiki/Live8 "What is Live8?"
+[4]: http://www.ogre3d.org/phpBB2/viewtopic.php?t=11578 "My post in Blender Forums"
+
+PS: From now on we can have beautiful category icons designed by [Jimmac][5]
+
+[5]: http://jimmac.musichall.cz/icons.php

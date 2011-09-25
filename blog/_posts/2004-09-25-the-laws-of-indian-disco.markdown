@@ -1,0 +1,22 @@
+---
+author: Arun Bhai
+date: '2004-09-25 18:45:17'
+layout: post
+slug: the-laws-of-indian-disco
+status: publish
+tags: [general]
+title: The Laws of Indian Disco
+wordpress_id: '18'
+---
+
+Come Friday and Pune Infosys would witness a remarkable phenomena perfected by weeks of alliteration. Early morning, beside the lush green landscaped autrium multicolored airbags get lined up in neat rows to greet a visitor. By late afternoon, the rabble of excited youngsters begin to make frantic calls for booking tickets. You could feel the buzz of excitement resonating off virtually every cubicle wall. By late evening, not just the D.C but the entire area becomes a ghost town. Then you realize you have just withnessed the mass weekend pilgrimage of mumbaites to their "home sweet homes". This week was Ganesh Chaturthi, a festival no self respecting Maharashtrian should miss being at ones home. Hence, Monday has been granted a holiday for Ganesh Visarjan.
+
+There was a party, the day before, celebrating ES (Enterprise Solutions) unit in Pune crossing the hundred mark in terms of employee strength. It was a dance party after a long time and it was really fun. Indian dance parties are always the same. On the dance floor, as in any party, there are always 2 kinds of people. You must be expecting the cliché. Those who can move and those who can't. Well, that's not quite true in India. It should be *those who know what they are doing and those who don't*. The latter category, being a majority, knows that every self respecting DJ should play loud Punjabi numbers and crass Bollywood remixes which forces everyone to some simple <em>Bangra</em> (Punjabi) steps. Even an odd "Summer of 69" or "We will rock you" is a piece of cake. You just have to imagine that you are in a communist rally and you are leaping while you are shouting a slogan.
+
+The moment a DJ strays from this unspoken code, the entire junta goes haywire. Reactions would range from "This party needs some juice, man" to "Stop the F*@%ing show!". We, Indians, practically play <em>Dhandia</em> (the Holi dance) on a disco floor. People form circles and try to make a formation as if they were Bollywood extras. The circles without girls shrink over time and the ones with girls keep growing till they start stepping into everybody else's feet. The hot favourites both on the dance floor and for desi DJs are the Punjabis (or the mundas and mundis as the DJs affectionately call them). Feel the party is getting cold? Slowly fade in to that Punjabi pop number (which one? doesn't matter which, yaar!). It always works. They would even happily go on for the next couple of numbers without skipping a beat, never realizing that they are dancing to some salsa tune. Perhaps the famed Newton's law of inertia is at work here.
+
+The distinguished crowd prefers to ogle, ahem, watch the proceedings by being comfortable seated in the surrounding chairs. This brings in elements of the classical Indian <em>mehfil</em>, if you wish. Some make the switch to sitting, quietly in the middle of a noisy number. If you look at it closely, it is quite a strategic move because the next moment they would be wolfing down their chicken leg like an industrial-grade pencil sharpener. This leaves the poor party good Samaritan having less desirable parts of a chicken eyeing the thankless audience with longing eyes.
+
+Inevitably while the party draws to a close there will be two kinds of enthusiasts rocking the dance floor  the unnaturally gifted and the intolerably high spirited. The gifted are your next door girl-who-was-practicing-classical-dance-turned-cinematic-dancer. They paint the clueless crowd onida green with their authentic dance steps which you might have forgotten from the silver screen. For once it is their field day and they have to fight for all the attention they get before the Cinderella spell breaks. That should explain their superhuman stamina. The other half is the happy people in their high spirits. These cheerful lots are the twilight zone of any party. They hardly wait for sunset, ain't they? They move with amazing flexibility and no power. In no time they cover an entire dance floor in their amazing snake-like movement.
+
+At the end of the day, a party is all about meeting people and having really nice conversations. So what if it was an articulate goofy looking guy who you "happened" to have dinner with. You can always pretend to forget him the next day. Dim lights, you know, dim lights.<!--84534eba37b7988c50244357f2bf4ff9-->
