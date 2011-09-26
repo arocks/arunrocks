@@ -534,6 +534,15 @@ article[role="post"] p, article[role="post"] li {
     margin: 0 0 1.5em 0; 
     margin-bottom: 1em;
 }
+
+/* Inter-post gaps */
+/*   (Cannot use last-child since there is a <p> element ‘More posts…” below the last article)*/
+section[role="container"] article[role="post"] {
+    margin-bottom: 6em;
+}
+section[role="container"] article[role="post"]:last-of-type {
+    margin-bottom: 2em;
+}
 /* Drop cap */
 article[role="post"] h1 + p:first-letter {
     float: left;
@@ -608,6 +617,7 @@ ul.navlinks {
     width: 100%;
 }    
 ul.navlinks li {
+    overflow: hidden; 
     float: left;
     width: 170px;
     margin-bottom: 0.2em;
