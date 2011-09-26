@@ -694,6 +694,13 @@ aside[role="sidebar"] li {
     display: block;
     height: 18px;
 }
+
+.profilepic {
+    border: 3px solid white;
+    box-shadow: 1px 1px 2px #333;
+    margin: 8px;
+    height: 60px;
+}
 /* Social icons */
 #soc-rss { background: url(../images/icons/RSS.png) no-repeat; }
 #soc-lin { background: url(../images/icons/linkedin.png) no-repeat; }
