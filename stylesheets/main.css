@@ -10,6 +10,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Arvo:700);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(pygments.css);
 
 /* HTML5 elements display
 ---------------------------------------- */
@@ -748,6 +749,18 @@ form[role="search"] {
 footer[role="siteinfo"] address {
     font-size: 0.9em;
     margin: 1em 0 0.1em 0;
+}
+
+/* Archives page
+---------------------------------------- */
+.archives {
+    list-style: none;
+    padding-left: 0;
+}
+.archives span {
+    width: 4em;
+    float: left;
+    color: #6B7594;
 }
 
 /* Media queries

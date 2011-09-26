@@ -16,7 +16,7 @@ layout: base
     <!-- tags --> 
     <ul class="tags group"> 
     {% for tag in page.tags limit: 3 %}
-        <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag">{{ tag }}</a></li> 
+        <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag" title="See all posts tagged with {{tag}}">{{ tag }}</a></li> 
     {% endfor %}
     </ul> 
     <!-- license --> 
