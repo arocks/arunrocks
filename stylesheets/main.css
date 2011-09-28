@@ -710,7 +710,7 @@ aside[role="sidebar"] li {
     border: 3px solid white;
     box-shadow: 1px 1px 2px #333;
     margin: 8px;
-    height: 60px;
+    height: 70px;
 }
 /* Social icons */
 #soc-rss { background: url(../images/icons/RSS.png) no-repeat; }
