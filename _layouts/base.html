@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css?version=1" /> 
 <link rel="alternate" type="application/rss+xml" href="/rss" title="arunrocks" /> 
 <link rel="canonical" href="{{ page.url }}" /> 
-<link rel="shortcut icon" href="/favicon.ico">
+<link rel="shortcut icon" href="/images/favicon.ico">
 {% if page.previous %}<link rel="prev" href="{{ page.previous.url }}" /> {% endif %}
 {% if page.next %}<link rel="next" href="{{ page.next.url }}" /> {% endif %}
 <!--[if lt IE 9]>
@@ -32,7 +32,7 @@
     <div id="stage"></div> 
     <nav class="group"><ul> 
         <li><a {% unless page.microsite %}class="cur" {% endunless %}href="/blog">Blog          <br><sub>Tech & Tales</sub></a></li> 
-        <li><a {% if page.microsite == 'lab' %}class="cur" {% endif %}href="/lan">Lab        <br><sub>My Games & Projs</sub></a></li> 
+        <li><a {% if page.microsite == 'lab' %}class="cur" {% endif %}href="/lab">Lab        <br><sub>My Games & Projs</sub></a></li> 
         <li><a {% if page.microsite == 'films' %}class="cur" {% endif %}href="/films">Films     <br><sub>Short Movies</sub></a></li> 
         <li><a {% if page.microsite == 'photos' %}class="cur" {% endif %}href="/photos">Photos     <br><sub>Gallery of Snaps</sub></a></li> 
     </ul></nav> 
