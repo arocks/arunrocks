@@ -719,6 +719,12 @@ aside[role="sidebar"] li {
 #soc-twi { background: url(../images/icons/twitter.png) no-repeat; }
 #soc-del { background: url(../images/icons/delicious.png) no-repeat; }
 
+#soc-blog-rss { 
+    background: url(../images/icons/RSS.png) no-repeat; 
+    min-width: 40px;
+    display: inline-block;
+}
+
 aside[role="sidebar"] a {
     color: #333;
 }
@@ -751,6 +757,11 @@ footer[role="siteinfo"] address {
     margin: 1em 0 0.1em 0;
 }
 
+/* scrollbox */
+.scrollbox {
+    border-top: 2px dotted #999;
+    padding: 4px 0;
+}
 /* Archives page
 ---------------------------------------- */
 .archives {

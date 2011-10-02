@@ -2,7 +2,9 @@
 layout: base
 ---
  
-<article role="post"><header class="postdate"> 
+<article role="post">
+<!-- ================================================================================ -->
+<header class="postdate"> 
     <time pubdate datetime="{{ page.date  | date:"%Y-%m-%d"}}"> <abbr title="{{ page.date  | date:"%A, %d %B %Y"}}">
       <span class="dd">{{ page.date  | date:"%d"}}</span> {{ page.date  | date:"%b %Y"}} </abbr>
     </time> 
@@ -19,8 +21,14 @@ layout: base
         <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag" title="See all posts tagged with {{tag}}">{{ tag }}</a></li> 
     {% endfor %}
     </ul> 
-    <!-- license --> 
-    <p><a href="http://creativecommons.org/licenses/by/2.5/" rel="license" class="license"> Creative Commons Attribution 2.5</a></p> 
+
+    <!-- ================================================================================ -->
+<aside role="socialbutns" class="scrollbox"> 
+<span  class='st_reddit_hcount' displayText='Reddit'></span><span  class='st_twitter_hcount' displayText='Tweet'></span><span  class='st_sharethis_hcount' displayText='ShareThis'></span><span  class='st_fblike_hcount' ></span><span  class='st_plusone_hcount' ></span>
+
+<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'13557bf3-e5c7-401d-a450-ff201cb0ae3d'});</script>
+</aside> 
+</section> 
     <!-- navigation --> 
     <ul class="navlinks group"> 
       {% if page.previous.url %} 
@@ -36,7 +44,7 @@ layout: base
       {% endif %} 
     </ul> 
 </footer>
-</section> 
+
 <section role="comments"> 
 <h1>Comments</h1> 
 <a rel="pagetop" href="#top">Go back to top</a> 
