@@ -1,0 +1,249 @@
+<html>
+<head><title>REVERSE in Javascript</title></head>
+<style><!--
+.scene{
+	width:400px;
+	height:35px;
+	border:none;
+	position:relative;
+	background-color: #e5ecf4;
+	top:0;
+	left:0;
+	overflow:hidden;
+	font-family: Verdana, sans-serif; 
+	font-size: 10px
+}
+.digit_frame{
+	position:absolute;
+	top:2;
+	left:0;
+	width:18px;
+	height:20px;
+	padding: 2px;
+	border:2px #000000;
+	background-color: #a1bbe4;
+}
+.digit_frame a{
+	padding: 2px;
+	text-decoration: none;
+	background-color: #f0e8f5;
+	color: black;
+	display: block;	
+}
+.digit_frame a:hover{
+	background-color: black;
+	color: white;
+}
+.result_pane{
+	top:0;
+	left:0;
+	width:400px;
+	height:45px;
+	border:none;
+	position:relative;
+	background-color: #e5ecf4;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	background-image:url(logo.gif);
+	font-family: Verdana, sans-serif; 
+	font-size: 16px
+}
+.tiny_result{
+	font-family: Verdana, sans-serif; 
+	font-size: 10px
+}
+#reset_butn{
+	position:absolute;
+	top:20;
+	left:250;
+	font-family: Verdana, sans-serif; 
+	font-size: 10px
+}
+#reset_butn a{
+	color: #B9BFC5;
+}
+--></style>
+<script type="text/javascript" defer="false"><!--
+// This work is released under GPL by Arun Ravindran (C) 2006
+//
+var items = new Array(1,2,3,4,5,6,7,8,9); // This MUST be in sorted order
+var sorted_items = items.concat(); // clone the entire array
+var digitnodes = new Array();
+var scene;
+var sample;
+var item_width;
+var steps;
+var complexity;
+var normalcolor = "";
+var blinkcolor = '#0000FF';
+
+function removeChildrenFromNode1(node)
+{
+	alert(node.hasChildNodes());
+	node.replaceWholeText("");
+	var len = node.childNodes.length;
+	while (node.hasChildNodes()) {
+	  node.removeChild(node.firstChild);
+	}
+}
+
+function renderpos(n, x){
+	/*n.innerHTML = "<a href='javascript:pressed(" + x + ")>" + items[x] + "</a>";*/
+	var newLink = document.createElement("a");
+	newLink.href = "javascript:pressed(" + x + ")";
+	//removeChildrenFromNode1(n);
+	if(n.hasChildNodes())
+		n.removeChild(n.firstChild);
+	n.appendChild(newLink);
+	
+	newLink.appendChild(document.createTextNode("" + items[x]));
+}
+
+function show_status(x){
+	var pane = document.getElementById("result");
+	pane.innerHTML = x;
+}
+
+function createpos(p){
+		var xpos, node;
+		xpos = p * item_width;
+		node = digitnodes[p];
+		renderpos(node, p);
+		node.style.left = xpos + "px";
+		node.zIndex = "" + p;
+		node.style.visibility = 'visible';
+		digitnodes[p] = node;
+}
+
+function init(){
+	//alert("done!");
+	var i, xpos, node;
+	sample = document.getElementById("digit_sample");
+	scene = document.getElementById("scene");
+	item_width =  25; //sample.style.width + 4;
+	sample.style.visibility = 'hidden';
+	for(i = 0; i < items.length; ++i) {
+		xpos = i * item_width;
+		node = sample.cloneNode(true);
+		digitnodes[i] = node;
+		scene.appendChild(node);
+	}
+	restart();
+	help();
+}
+
+function restart() {
+	complexity = 4;
+	mixall(complexity);
+	p = 0
+	remake();
+	show_status("Ready...");
+}
+
+function single_swap(a,b) {
+	t = items[b];
+	items[b] = items[a];
+	items[a] = t;
+}
+
+function check_game_over() {
+	var i, same;
+	same = 1;
+	for(i = 0; i < items.length; ++i) {
+		if(items[i] != sorted_items[i]) {
+			same = 0;
+			break;
+		}
+	}
+	if(same) {
+		if(steps <= complexity) {
+			show_status("<b>Congratulations!</b> you took " + steps + 
+			" moves<br><small>Was expecting " + complexity + " moves:)</small>");
+		}
+		else {
+			show_status("<b>Well done!</b> took " + steps + 
+			" moves<br><small>Ideally it takes " + complexity + " moves</small>");
+		}
+	}
+	else {
+		show_status("hmmm...");
+	}
+}
+function mixall(times) {
+	var i, a, b, t, len, prev;
+	len = items.length;
+	steps = 0;
+	// Don't repeat the prev random numbers. So keep a note of it
+	prev = -1;
+	for(i = 0; i < times; ++i) {
+		a = Math.floor(Math.random() * len);
+		if(a == prev || a == 0) { // then dont count this mixing step
+			--i;
+		}
+		else {
+			swap(a);
+			//alert( "a=" + a + ",b=" + b + ",List" + items.toString());
+			prev = a;
+		}
+	}
+	check_game_over();
+}
+
+function swap(pos) {
+	var i, j;
+	j = pos;
+	for(i = 0; i < (pos + 1) / 2; ++i) {
+		single_swap(i, j);
+		--j;
+	}
+}
+
+function remake() {
+	var i;
+	for(i = 0; i < items.length; ++i) {
+		createpos(i);
+	}
+}
+function blink(pos) {
+	var i;
+	for(i = 0; i <= pos; ++i) {
+		digitnodes[i].style.backgroundColor = blinkcolor;
+	}
+	setTimeout("removeblink(" + pos + ")",200);
+}
+function removeblink(pos)  {
+	var i;
+	for(i = 0; i <= pos; ++i) {
+		digitnodes[i].style.backgroundColor = normalcolor;
+	}
+}
+
+function pressed(pos) {
+	//alert(items[pos] + " was clicked " + sorted_items.toString());
+	++steps;
+	blink(pos);
+	swap(pos);
+	remake();
+	check_game_over();
+}
+function help() {
+	show_status("<span class='tiny_result'>The objective is to arrange the boxed numbers "+
+	"in increasing order. At every move clicking on a number will reverse all the numbers to its left"+
+	"<img src='handball.gif'/></span>");
+}
+//--></script>
+
+<body onload="init();">
+
+<div id="scene" class="scene">
+<div id="digit_sample" class="digit_frame"></div>
+<div id="reset_butn" class="reset_frame">
+	<a href='javascript:restart()'>New game?</a> | 
+	<a href='javascript:help()'>Help?</a>
+</div>
+</div>
+<div id="result" class="result_pane"></div>
+
+
+</body>
+</html>

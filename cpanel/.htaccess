@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/cpanelproxy.php
+RewriteRule .* /cpanelproxy.php [last]
+
+<IfModule mod_php4.c>
+#php_value magic_quotes_gpc 0
+#php_value magic_quotes_runtime 0
+</IfModule>
