@@ -31,10 +31,14 @@
     </a></h1> 
     <div id="stage"></div> 
     <nav class="group"><ul> 
-        <li><a {% unless page.microsite %}class="cur" {% endunless %}href="/blog">Blog          <br><sub>Tech & Tales</sub></a></li> 
-        <li><a {% if page.microsite == 'lab' %}class="cur" {% endif %}href="/lab">Lab        <br><sub>My Games & Projs</sub></a></li> 
-        <li><a {% if page.microsite == 'films' %}class="cur" {% endif %}href="/films">Films     <br><sub>Short Movies</sub></a></li> 
-        <li><a {% if page.microsite == 'photos' %}class="cur" {% endif %}href="/photos">Photos     <br><sub>Gallery of Snaps</sub></a></li> 
+        <li><a {% unless page.microsite %}class="cur" {% endunless %}href="/blog" title="Blog: Tech & Tales">
+Blog          <br><sub>Tech & Tales</sub></a></li> 
+        <li><a {% if page.microsite == 'lab' %}class="cur" {% endif %}href="/lab" title="Lab: My Games & Projs">
+Lab        <br><sub>My Games & Projs</sub></a></li> 
+        <li><a {% if page.microsite == 'films' %}class="cur" {% endif %}href="/films" title="Films: Short Movies">
+Films     <br><sub>Short Movies</sub></a></li> 
+        <li><a {% if page.microsite == 'photos' %}class="cur" {% endif %}href="/photos" title="Photos: Gallery of Snaps">
+Photos     <br><sub>Gallery of Snaps</sub></a></li> 
     </ul></nav> 
 </header> 
 <!-- ================================================================================ -->
@@ -62,7 +66,7 @@
   <a href="https://github.com/mojombo/jekyll/wiki">Jekyll</a>
   | Hosted on
   <a href="https://customers.asmallorange.com/aff.php?aff=15201">asmallorange</a>
-  | <!-- license --> 
+  <br/> <!-- license --> 
   <a href="http://creativecommons.org/licenses/by/2.5/" rel="license" class="license" title="All content under Creative Commons Attribution 2.5 license"> BY 2.5</a>
 </address>
 </footer> 
