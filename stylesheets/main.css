@@ -575,6 +575,7 @@ article[role="post"] h1 a:hover {
 }
 
 article[role="post"] h1 {
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
     letter-spacing: -1px;
     font-size: 2.2857em; /* 32px */ line-height: 1.3125em; /* 42px */ margin-top: 0.3563em; margin-bottom: 0.3em; 
 }
