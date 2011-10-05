@@ -444,10 +444,10 @@ header[role="banner"] nav li a:hover {
     opacity : .6;
     transition : .2s
 
-     -moz-transition: opacity 1s linear;  /* FF4+ */
-       -o-transition: opacity 1s linear;  /* Opera 10.5+ */
-  -webkit-transition: opacity 1s linear;  /* Saf3.2+, Chrome */
-      -ms-transition: opacity 1s linear;  /* IE10? */
+     -moz-transition: opacity 1s linear;
+       -o-transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+      -ms-transition: opacity 1s linear;
           transition: opacity 1s linear;  
 }
 
@@ -468,6 +468,19 @@ header[role="banner"] #stage {
     top: 135px;
 }
 
+header[role="banner"]:hover #stage {
+    opacity: 0;
+
+     -moz-transition: all 0.9s ease-in;
+       -o-transition: all 0.9s ease-in;
+  -webkit-transition: all 0.9s ease-in;
+      -ms-transition: all 0.9s ease-in;
+          transition: all 0.9s ease-in;  
+
+    -webkit-transform: scale(0.8);
+    -webkit-transform-origin: top left;
+    -webkit-transition-delay: 0.3s;
+}
 /* Main post */
 
 section[role="container"]{
