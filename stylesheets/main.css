@@ -458,17 +458,17 @@ header[role="banner"] a.cur {
 
 /* Show interesting banner animations */
 
-header[role="banner"] #stage {
+header[role="banner"] #actor1 {
     position: absolute;
+    left: 40%;
+    top: 135px;
     background: url(../images/coffee-cup.png) center bottom no-repeat;
     display: block;
     width: 179px;
     height: 165px;
-    left: 40%;
-    top: 135px;
 }
 
-header[role="banner"]:hover #stage {
+header[role="banner"]:hover #actor1 {
     opacity: 0;
 
      -moz-transition: all 0.9s ease-in;
@@ -481,6 +481,31 @@ header[role="banner"]:hover #stage {
     -webkit-transform-origin: top left;
     -webkit-transition-delay: 0.3s;
 }
+
+header[role="banner"] #actor2 {
+    opacity: 0;
+    position: absolute;
+    left: 35%;
+    top: 135px;
+    background: url(../images/unsolvable.gif) center bottom no-repeat;
+    display: block;
+    width: 179px;
+    height: 165px;
+}
+
+header[role="banner"]:hover #actor2 {
+    opacity: 1;
+
+     -moz-transition: all 0.9s ease-in;
+       -o-transition: all 0.9s ease-in;
+  -webkit-transition: all 0.9s ease-in;
+      -ms-transition: all 0.9s ease-in;
+          transition: all 0.9s ease-in;  
+
+    -webkit-transform-origin: top;
+    -webkit-transition-delay: 1.3s;
+}
+
 /* Main post */
 
 section[role="container"]{
