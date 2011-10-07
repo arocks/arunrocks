@@ -65,13 +65,10 @@ layout: base
 <p><a rel="pagetop" href="#top">Go back to top</a></p> 
 </section> 
 <!-- ================================================================================ -->
-<aside class="socialpost"> 
-</aside>
-<!-- ================================================================================ -->
 <aside role="sidebar"> 
 {% include about_me.html %}
 
-{% if site.related_posts %}
+{% if site.related_posts.size > 0 %}
 <section class="related"> 
   <h1>Related Posts</h1> 
   <ul> 

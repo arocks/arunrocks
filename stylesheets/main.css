@@ -797,9 +797,7 @@ footer[role="siteinfo"] address {
 /* Media queries
 ---------------------------------------- */
 
-/* The media queries included in here are only placeholder. Modify them as your content requires */
-
-
+/* Below 960px: fold-down sidebar, remove coffe-cup table banner, compress top links */
 @media only screen and  (max-width: 960px) {
     aside[role="sidebar"] {
         position: relative;
@@ -825,6 +823,7 @@ footer[role="siteinfo"] address {
     }
 }
 
+/* Below 600px: top texture turns solid blue, compress top links further */
 @media only screen and  (max-width: 600px) {
     html {
         background: #081640;
@@ -840,6 +839,10 @@ footer[role="siteinfo"] address {
     header[role="banner"] {
         background: transparent;
         height: 100px;
+    }
+    header[role="banner"] nav li a {
+        font-size: 1em;
+        width: 45px;
     }
     ul.navlinks li a sub {
         display: none;
