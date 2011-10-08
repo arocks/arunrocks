@@ -26,10 +26,8 @@ layout: base
 <!-- ================================================================================ -->
 <footer>
     <!-- tags --> 
-    <ul class="tags group"> 
-    {% for tag in page.tags limit: 3 %}
-        <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag" title="See all posts tagged with {{tag}}">{{ tag }}</a></li> 
-    {% endfor %}
+    <ul class="tags group">         {% for tag in page.tags limit: 3 %}
+        <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag" title="See all posts tagged with {{tag}}">{{ tag }}</a></li>            {% endfor %}
     </ul> 
 </section> 
 
