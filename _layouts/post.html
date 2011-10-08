@@ -3,6 +3,7 @@ layout: base
 ---
  
 <article role="post">
+
 <!-- ================================================================================ -->
 <header class="postdate"> 
     <time pubdate datetime="{{ page.date  | date:"%Y-%m-%d"}}"> <abbr title="{{ page.date  | date:"%A, %d %B %Y"}}">
@@ -12,7 +13,16 @@ layout: base
 <section> 
 
 <h1><a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a></h1>
+
+<!-- ================================================================================ -->
+<aside role="socialbutns" class="scrollbox"> 
+<span  class='st_fblike_hcount' ></span><span  class='st_twitter_hcount' displayText='Tweet'></span></span><span  class='st_plusone_hcount' ></span><span  class='st_sharethis_hcount' displayText='ShareThis'>
+
+<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'13557bf3-e5c7-401d-a450-ff201cb0ae3d'});</script>
+</aside> 
+
 {{ content }}
+
 <!-- ================================================================================ -->
 <footer>
     <!-- tags --> 
@@ -21,14 +31,9 @@ layout: base
         <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag" title="See all posts tagged with {{tag}}">{{ tag }}</a></li> 
     {% endfor %}
     </ul> 
-
-    <!-- ================================================================================ -->
-<aside role="socialbutns" class="scrollbox"> 
-<span  class='st_reddit_hcount' displayText='Reddit'></span><span  class='st_twitter_hcount' displayText='Tweet'></span><span  class='st_sharethis_hcount' displayText='ShareThis'></span><span  class='st_fblike_hcount' ></span><span  class='st_plusone_hcount' ></span>
-
-<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'13557bf3-e5c7-401d-a450-ff201cb0ae3d'});</script>
-</aside> 
 </section> 
+
+<!-- ================================================================================ -->
     <!-- navigation --> 
     <ul class="navlinks group"> 
       {% if page.previous.url %} 
