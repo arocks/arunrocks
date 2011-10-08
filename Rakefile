@@ -35,12 +35,12 @@ namespace :rsync do
 
   desc "rsync to production server as a dry run"
   task :dryrun do
-    system('rsync -aivz -e ssh --delete --dry-run ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/beta')
+    system('rsync -aivz -e ssh --delete --dry-run ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
   end
 
   desc "rsync to production server"
   task :prod do
-    system('rsync -aivz -e ssh --delete ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/beta')
+    system('rsync -aivz -e ssh --delete ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
   end
 end
 
