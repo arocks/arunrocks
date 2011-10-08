@@ -485,7 +485,7 @@ header[role="banner"]:hover #actor1 {
 header[role="banner"] #actor2 {
     opacity: 0;
     position: absolute;
-    left: 35%;
+    left: 40%;
     top: 135px;
     background: url(../images/pnp.png) center bottom no-repeat;
     display: block;
