@@ -48,9 +48,10 @@ end
 
 # Additional build tasks  ----------
 #  (Why --rsyncable? Read http://beeznest.wordpress.com/2005/02/03/rsyncable-gzip/)
+#  (Why --no-name? Experiements show storing timestamps create different md5 for gzips )
 desc 'Pre-gzip all the files that have the desired extensions .js, .css or .html'
 task :gzip do
-  system("find ./_site \\( -name '*.html' -or -name '*.js' -or -name '*.css' \\) -exec sh -c 'gzip -v -9 --rsyncable -c {} > {}gz' \\;")
+  system("find ./_site \\( -name '*.html' -or -name '*.js' -or -name '*.css' \\) -exec sh -c 'gzip -v --no-name -9 --rsyncable -c {} > {}gz' \\;")
 end
 
 # Adding a new post in Jekyll ----------
