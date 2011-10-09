@@ -172,6 +172,8 @@ FileETag None
 #  Options: [R=301]: Moved permanently
 
 RewriteRule ^blog/archives/(.+)$ /blog/$1 [R=301]
+#  Feed url has changed but don't redirect it
+RewriteRule ^blog/feed/(.+)$ /blog/feed/atom.xml
 
 
 

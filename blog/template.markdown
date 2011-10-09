@@ -7,17 +7,61 @@ tags: [bangalore, move, mangalore]
 title: Lured to Bengaluru
 ---
 
-As of last week, I have completed my move to the technology mecca of India - Bangalore. I have had a lovely 3 year stint in Mangalore. Have so many wonderful memories with the place that the decision to move seemed impossible. But finally we took the plunge.
+Markdown Reference
+-----------------------
+
+*italic*   **bold**
+_italic_   __bold__
+
+An [example](http://url.com/ "Title")
+
+An [example][id]. Then, anywhere
+else in the doc, define the link:
+
+   [id]: http://example.com/  "Title"
+   
+   
+
+* item 1
+* item 2
+* item 3
+
+Nested lists:
+
+*   Dog
+    * Fox
+*   Cats
+    1.  Lion
+    2.  Tiger
+        * Bengal Tiger
+    3.  Leopard
+*   Cows
+
+> quoted text
 
 <img src="/blog/img/shift-key.jpg" width="430" height="300" alt="Shift key" title="Shift key (photo by www.garrisonphoto.org/sxc)" class="alignright"/>
 
+### Code
 
-### First Impressions
+`<code>` spans are delimited
+by backticks.
 
+You can include literal backticks
+like `` `this` ``.
 
-The traffic jams have somewhat reduced thanks to projects like the [Silk Board Elevated Tollway][expressway] and [NICE road][nice]. The commuting time at around 8 in the morning is just thirty minutes by office bus via NICE. This is quite reasonable compared to many horror stories of two to three hours of commuting time in certain areas. I would say that shorter commuting times significantly improve one's work-life satisfaction.
+This is a normal paragraph:
 
-[expressway]: http://en.wikipedia.org/wiki/Hosur_Road#Elevated_expressway
-[nice]: http://en.wikipedia.org/wiki/Bangalore%E2%80%93Mysore_Infrastructure_Corridor
-[pi]: http://www.arunrocks.com/blog/archives/2010/09/11/infibeam-pi-my-experiences-with-an-ebook-reader/
+    This is a preformatted
+    code block.
 
+Preceded by a space, the colon
+disappears. :
+
+    This is a preformatted
+    code block.
+    
+### Manual Line Breaks
+
+End a line with two or more spaces:
+Roses are red,  
+Violets are blue.  
