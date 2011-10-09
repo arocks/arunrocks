@@ -33,7 +33,7 @@ Nested lists:
 *   Cats
     1.  Lion
     2.  Tiger
-        * Bengal Tiger
+        * Bengal Tigress
     3.  Leopard
 *   Cows
 
