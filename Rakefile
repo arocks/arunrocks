@@ -4,6 +4,7 @@
 # Usage:
 #   rake             - Will run the default task of auto-regenerating server on port 4000
 #   rake deploy:prod - Will deploy to arunrocks.com
+#   rake write["Post Title Goes Here"] - Adds a new posts
 
 task :default => :server
 
@@ -50,4 +51,40 @@ end
 desc 'Pre-gzip all the files that have the desired extensions .js, .css or .html'
 task :gzip do
   system("find ./_site \\( -name '*.html' -or -name '*.js' -or -name '*.css' \\) -exec sh -c 'gzip -v -9 -c {} > {}gz' \\;")
+end
+
+# Adding a new post in Jekyll ----------
+
+desc "Given a \"title\" as an argument, create a new post file"
+task :write, [:title] do |t, args|
+  filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '_').downcase}.markdown"
+  path = File.join("blog", "_posts", filename)
+  if File.exist? path; raise RuntimeError.new("File exists. Won't clobber #{path}"); end
+  File.open(path, 'w') do |file|
+    file.write <<-EOS
+---
+layout: post
+title: #{args.title}
+date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+tags: [undefined, ]
+---
+
+Remove me and the text till the end...
+
+<img src="/blog/img/shift-key.jpg" width="430" height="300" alt="Shift key" title="Shift key (photo by www.garrisonphoto.org/sxc)" class="alignright"/>
+
+### Code
+
+{% highlight c %}
+    #includio <stdio.h>
+    
+    int main() {
+        printf ("Hello World!\n");
+        return 0;
+    }
+
+
+EOS
+  end
+  puts "Now open #{path} in an editor."
 end
