@@ -67,7 +67,7 @@ task :write, [:title] do |t, args|
 layout: post
 title: #{args.title}
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
-tags: [undefined, ]
+tags: [undefined, general]
 ---
 
 Remove me and the text till the end...

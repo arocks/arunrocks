@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Growing up as a programmer
-date: 2011-10-09 23:26:18
-tags: [programming, rants, ]
+date: '2011-10-09 23:26:18'
+tags: [programming, rants ]
 ---
 
-<img src="/blog/img/shift-key.jpg" width="430" height="300" alt="Shift key" title="Shift key (photo by www.garrisonphoto.org/sxc)" class="alignright"/>
-
 Whether to build or to reuse is a classic dilemma for most programmers. If you choose build, then you would have to spend a lot of effort designing, coding, testing and debugging your creation. If you choose to reuse, then you would have to pour over all the documentation which would be typically outdated or inadequate in many places.
+
+<img src="/blog/img/coffee-press.jpg" width="429" height="500" alt="Coffee Cup" title="Coffee Cup (photo by www.flickr.com/photos/indivisualist)" class="alignright"/>
 
 Initially, most programmers start out as cowboys. They are fearless and fiercely independent. They believe that they can build anything and need not waste time struggling to understand somebody else's horrible piece of code. It works for a while because they have the skill of programming and we all can program our way out of anything, right? Wrong.
 
