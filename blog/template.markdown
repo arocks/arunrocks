@@ -54,6 +54,7 @@ This is a normal paragraph:
 {% highlight python %}
     This is a preformatted
     code block.
+{% endhighlight %}
 
 Preceded by a space, the colon
 disappears. :

@@ -24,7 +24,7 @@ The traffic jams have somewhat reduced thanks to projects like the [Silk Board E
 
 Out of curiousity, I enquired with a lot of people on how they spend their commuting times. Even if it's one hour one-way, it adds up to around 40 hours of lost time. Most people replied that they either sleep or listen to music. A few catchup on the daily newspaper or rarely a book. 
 
-I have opted to take my [Infibeam Pi] along. It makes the mundane bus journeys a lot more interesting. There is a huge, huge backlog of books that I have always wanted to read. With many free ePubs being available, its always a pleasure to have several million pages of literature and technology at one's finger tips. I was not a big fan of reading in a moving vehicle (sometimes causes motion sickness). But thanks to good roads, I don't find reading in the office bus to be much of an inconvenience.
+I have opted to take my [Infibeam Pi][pi] along. It makes the mundane bus journeys a lot more interesting. There is a huge, huge backlog of books that I have always wanted to read. With many free ePubs being available, its always a pleasure to have several million pages of literature and technology at one's finger tips. I was not a big fan of reading in a moving vehicle (sometimes causes motion sickness). But thanks to good roads, I don't find reading in the office bus to be much of an inconvenience.
 
 Any move is hardly a pleasant experience. We are still in the process of settling down. The nice thing is that Bangaloreans are quite active in many online communities and it is quite easy to get tips and essential information online. This makes the settling down process a lot easier.
 

@@ -36,18 +36,18 @@ namespace :rsync do
 
   desc "rsync to production server as a dry run"
   task :dryrun do
-    system('rsync -aivhz -e ssh --delete --dry-run ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
+    system('rsync -aivhcz -e ssh --stats --delete --dry-run ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
   end
 
   desc "rsync to production server"
   task :prod do
-    system('rsync -aivhz -e ssh --delete ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
+    system('rsync -aivhcz -e ssh --stats --delete ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
   end
 end
 
 
 # Additional build tasks  ----------
-
+#  (Why --rsyncable? Read http://beeznest.wordpress.com/2005/02/03/rsyncable-gzip/)
 desc 'Pre-gzip all the files that have the desired extensions .js, .css or .html'
 task :gzip do
   system("find ./_site \\( -name '*.html' -or -name '*.js' -or -name '*.css' \\) -exec sh -c 'gzip -v -9 -c {} > {}gz' \\;")
@@ -82,7 +82,7 @@ Remove me and the text till the end...
         printf ("Hello World!\n");
         return 0;
     }
-
+{% endhighlight %}
 
 EOS
   end
