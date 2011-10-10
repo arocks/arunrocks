@@ -173,9 +173,9 @@ FileETag None
 
 RewriteRule ^blog/archives/(.+)$ /blog/$1 [R=301]
 #  Feed url has changed but don't redirect it
-RewriteRule ^blog/feed/(.+)$ /blog/feed/atom.xml
-
-
+RewriteRule ^blog/feed/$ /blog/feed/atom.xml
+#  Browsers have the nasty habit of checking for /favicon.ico
+RewriteRule ^favicon.ico$ /images/favicon.ico 
 
 # ----------------------------------------------------------------------
 # Add/remove trailing slash to (non-file) URLs
