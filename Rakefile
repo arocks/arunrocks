@@ -87,5 +87,5 @@ Remove me and the text till the end...
 
 EOS
   end
-  puts "Now open #{path} in an editor."
+  puts "Now open #{pwd}/#{path} in an editor."
 end
