@@ -720,6 +720,7 @@ aside[role="sidebar"] {
     width: 200px;
     padding: 85px 10px 0 10px;
     color: #223f59;
+    border-top: 10px solid black; /* mourning */
 }
 aside[role="sidebar"] h1 {
     font-size: 1em; /* 14px */ 
@@ -759,7 +760,7 @@ aside[role="sidebar"] li {
 /* Social icons */
 #soc-rss { background: url(../images/icons/RSS.png) no-repeat; }
 #soc-lin { background: url(../images/icons/linkedin.png) no-repeat; }
-#soc-git { background: url(../images/icons/sharethis.png) no-repeat; }
+#soc-git { background: url(../images/icons/github.png) no-repeat; }
 #soc-twi { background: url(../images/icons/twitter.png) no-repeat; }
 #soc-del { background: url(../images/icons/delicious.png) no-repeat; }
 
