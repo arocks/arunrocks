@@ -720,7 +720,6 @@ aside[role="sidebar"] {
     width: 200px;
     padding: 85px 10px 0 10px;
     color: #223f59;
-    border-top: 10px solid black; /* mourning */
 }
 aside[role="sidebar"] h1 {
     font-size: 1em; /* 14px */ 
