@@ -55,4 +55,3 @@ Some interesting lessons learnt whilst developing this game are:
 + **innerHTML**: `innerHTML` is not fully crossplatform. It is very useful for debugging hence was often used in alert boxes. Use for node creation use DOM functions such as `createElement` or ` appendChild`
 + **Animation**: This was one of the primary reasons I wanted to turn the text based game in [E-Scribe](http://e-scribe.com/news/193) to a graphical one. It was no clear which digits were being swapped. Rather than go for a full blown fading/translating animation, I opted for a simple blink. As a result the gameplay is faster and more responsive.
 
-[tag]Programming, Javascript, Game, DHTML, DOM, innerHTML[/tag] 
