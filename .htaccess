@@ -172,9 +172,12 @@ FileETag None
 #  Options: [R=301]: Moved permanently
 
 RewriteRule ^blog/archives/(.+)$ /blog/$1 [R=301]
-#  Feed url has changed but don't redirect it
+# Feed url has changed but don't redirect it
+#   Planet Python, Kerala blog roll
 RewriteRule ^blog/feed/rss2/$ /blog/feed/  [R=301]
 RewriteRule ^blog/feed/$ /blog/feed/atom.xml
+RewriteRule ^blog/category/technical/python/feed/$ /blog/feed/atom.xml
+ 
 #  Browsers have the nasty habit of checking for /favicon.ico
 RewriteRule ^favicon.ico$ /images/favicon.ico 
 

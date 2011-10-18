@@ -29,7 +29,7 @@ For example, if the current list is 2 3 4 5 1 6 7 8 9 and you reverse 4, the res
 Play here, now!
 ===========
 
-<iframe src="/blog/downloads/reversegame/reverse-js-game.html" width = "420" height="100" frameborder="0" scrolling="no">
+<iframe src="/downloads/reversegame/reverse-js-game.html" width = "420" height="100" frameborder="0" scrolling="no">
 </iframe>
 
 "Reverse" in your website?
@@ -37,7 +37,7 @@ Play here, now!
 
 Simple! Just copy paste the following code in your site
 
-    <iframe src="/blog/downloads/reversegame/reverse-js-game.html"
+    <iframe src="/downloads/reversegame/reverse-js-game.html"
     width = "420" height="100" frameborder="0" scrolling="no">
     </iframe>
 
