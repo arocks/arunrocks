@@ -70,6 +70,7 @@
 <!-- ================================================================================ -->
 <script src="/javascripts/yepnope.1.0.2-min.js"> </script>
 <script type="text/javascript">
+  window._gaq = [['_setAccount','UA-26390496-1'],['_trackPageview'],['_trackPageview']];
   yepnope([
     {
       load: 'https://www.google.com/jsapi?key=ABQIAAAAruDpXM1h4nJ_alJtT7RebRRy5Se8ZoRlHtT5rIVT_Pvjm0vvVRQ47XfN7voeh_HfF9aLTbt6VeYiyA'
@@ -88,6 +89,9 @@
       complete: function() {
         stLight.options({publisher:'13557bf3-e5c7-401d-a450-ff201cb0ae3d'});
       }
+    },
+    {
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js',
     },
     {
       load: '/javascripts/site.js',

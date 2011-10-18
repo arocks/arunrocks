@@ -2,7 +2,7 @@
 layout: post
 title: Sony Bravia CX 420 and a Guide to Flat-panel TVs
 date: 2011-10-16 14:53:00
-tags: [undefined, general]
+tags: [tv, review, gadgets]
 ---
 
 It is Diwali time and the retail shopping excitement in India is comparable to Christmas season in the West. Everyone seems to be praying for their old and fat CRT TV to stop working, so that they have an excuse to buy a brand new flat screen TV.
