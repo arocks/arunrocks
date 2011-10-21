@@ -440,15 +440,7 @@ header[role="banner"] nav li a sub {
 }
 
 header[role="banner"] nav li a:hover {
-    border-top: 4px solid #fcffb0;
-    opacity : .6;
-    transition : .2s
-
-     -moz-transition: opacity 1s linear;
-       -o-transition: opacity 1s linear;
-  -webkit-transition: opacity 1s linear;
-      -ms-transition: opacity 1s linear;
-          transition: opacity 1s linear;  
+    border-bottom: 4px solid #fcffb0;
 }
 
 header[role="banner"] a.cur {

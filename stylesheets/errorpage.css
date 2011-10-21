@@ -1,0 +1,71 @@
+/*
+    * Special styles for 404 and other error pages
+*/
+
+/*=======================================*/
+/* Primary styles
+---------------------------------------- */
+
+html {
+    background: #223F59;
+}
+
+body {
+    font: 14px/21px georgia, serif;    
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Logo */
+h1[role="logo"] a {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 177px;
+    height: 53px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../images/logo.png) no-repeat;
+}    
+
+/* Navigation */
+header[role="banner_minimal"] nav {
+    max-width: 520px;
+    margin: 0px auto;
+}
+header[role="banner_minimal"] nav ul {
+    clear: both;
+    list-style: none;
+    margin-left: 85px;
+}
+header[role="banner_minimal"] nav li {
+    float: left;
+}
+header[role="banner_minimal"] nav li a {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2em; 
+    display: block;
+    width: 90px;
+    height: 3em;
+    color: #ddd;
+}
+header[role="banner_minimal"] nav li a:hover {
+    text-decoration: underline;
+}
+header[role="banner_minimal"] nav li a sub {
+    display: none;
+}
+/* Error Message */
+section[role="errormsg"] {
+    max-width: 520px;
+    position: relative;
+    color: #ddd; 
+    padding: 5px 24px 10px 56px;
+    margin: 0 auto;
+}
+
+footer[role="siteinfo"] {
+    background: transparent;
+    padding: 15px 2em 0 4em;
+    border-top: 1px solid #DDD;
+}

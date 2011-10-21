@@ -1,19 +1,118 @@
 ---
-layout: base
-title: 'Something went wrong'
-microsite: 404
+layout: errorpage
 ---
 <article role="post">
-
 <h1>Page not found </h1>
+<div></div>
+
+<script type="text/javascript">
+<!--
+/* Thanks to http://www.alistapart.com/articles/perfect404/ for the base js code */
+
+var strReferrer=document.referrer.toLowerCase();
+var blnSearchReferral = false;
+var blnInsiteReferral = false;
+var str="";
+var strSite = "";
+
+/* The mis-typed URL */
+if (strReferrer.length==0) {
+  str+='<p> This page does not exist. Please check our <a href="/blog/all">archives<\/a>. <\/p>';
+  str+='<p> This could have happened because of:<\/p>';
+  str+='<ol>';
+  str+=' <li>An <strong>out-of-date bookmark\/favorite <\/strong><\/li>';
+  str+=' <li>A <strong>mis-typed address</strong><\/li>';
+  str+='<\/ol>';
+  document.write(str);
+}
+
+/* The out-of-date search engine referral */
+if (strReferrer.length!=0) {
+  if ((strReferrer.indexOf(".looksmart.co")>0)||
+  (strReferrer.indexOf(".ifind.freeserve")>0)||
+  (strReferrer.indexOf(".ask.co")>0)||
+  (strReferrer.indexOf("google.co")>0)||
+  (strReferrer.indexOf("altavista.co")>0)||
+  (strReferrer.indexOf("msn.co")>0)||
+  (strReferrer.indexOf("yahoo.co")>0)) {
+  
+  blnSearchReferral=true;
+  //get site domain — split at the first forward-slash
+  var arrSite=strReferrer.split("/");
+  // now find search parameters
+  var arrParams=strReferrer.split("?"); 
+  var strSearchTerms = arrParams[1];
+  arrParams=strSearchTerms.split("&");
+  
+  strSite=arrSite[2];
+  var sQryStr="";
+  
+  //define what search terms are in use by the different engines
+  var arrQueryStrings = new Array();
+  arrQueryStrings[0]="q=";  //google, altavista, msn
+  arrQueryStrings[1]="p=";  //yahoo
+  arrQueryStrings[2]="ask=";  //ask jeeves
+  arrQueryStrings[3]="key=";  //looksmart
+  
+  for (i=0;i<arrParams.length;i++) {
+  //loop through all the parameters in the referring page’s URL
+
+    for (q=0;q<arrQueryStrings.length;q++) {
+
+    sQryStr = arrQueryStrings[q];
+    if (arrParams[i].indexOf(sQryStr)==0) {
+      //we’ve found a search term!
+      strSearchTerms = arrParams[i];
+      strSearchTerms = strSearchTerms.split(sQryStr);
+      strSearchTerms = strSearchTerms[1];
+      strSearchTerms = strSearchTerms.replace("+", " ");
+      }
+    }
+  }
+  //Tell the visitor what site is at fault, what the 
+  //search terms were
+  document.write ("<p>You seem to be searching for \"<strong>" + strSearchTerms + "<\/strong>\". Try these pages:<\/p>");
+  
+  // TODO: Add Google search based on strSearchTerms
+}
+/* The broken (in-site) link */
+if (!blnSearchReferral) {
+  strSite = strReferrer;
+  strSite = strSite.split("/");
+  strSite = strSite[2];
+  str+='<p> We recently redesigned this site. The page you are referring to must have moved. <\/p>';
+  str+='<p> We think you will find one of the top-most links or our <a href="/blog/all">archives<\/a> useful <\/p>';
+  document.write(str);
+  // TODO: Add search results?
+}
+
+/* This site had an incorrect link */
+blnInsiteReferral =((strReferrer.indexOf("http://arunrocks.com")>=0) || (strReferrer.indexOf("http://www.arunrocks.com") >=0))
+if (blnInsiteReferral) {
+  str+='<p> We recently redesigned this site and you have reached a non-existent page. Could be a typo. My bad! <\/p>';
+  str+='<p> We think you will find one of the top-most links or our <a href="/blog/all">archives<\/a> useful <\/p>';
+  document.write(str);
+}
+}
+//-->
+</script>
+
+<script type="text/javascript">
+  var GOOG_FIXURL_LANG = 'en-GB';
+  var GOOG_FIXURL_SITE = 'http://arunrocks.com'
+</script>
+<script type="text/javascript"
+  src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
+</script>
+
+<noscript>
 <p>I'm afraid we have run out of tea. Your page cannot be found. We are now in Limbo</p>
 <h2>Things to try</h2>
 <ul>
   <li> Go back to the <a href="/blog">Blog page</a>
   <li> Go back to the <a href="/">Home page</a>
 </ul>
-<!-- ================================================================================ -->
-<aside role="sidebar"> 
-{% include about_me.html %}
-</aside> 
+</noscript>
+
 </article> 
+
