@@ -17,7 +17,7 @@ var strSite = "";
 
 /* The mis-typed URL */
 if (strReferrer.length==0) {
-  str+='<p> This page does not exist. Please check any of the top-most links or our <a href="/blog/all">archives<\/a>. <\/p>';
+  str+='<p> I\'m afraid we have run out of tea. Your page cannot be found. Please check any of the top-most links or our <a href="/blog/all">archives<\/a>. <\/p>';
   str+='<p> This could have happened because of:<\/p>';
   str+='<ol>';
   str+=' <li>An <strong>out-of-date bookmark\/favorite <\/strong><\/li>';
@@ -69,18 +69,18 @@ if (strReferrer.length!=0) {
       }
     }
   }
-  //Tell the visitor what site is at fault, what the 
-  //search terms were
-  document.write ("<p>You seem to be searching for \"<strong>" + strSearchTerms + "<\/strong>\". Try these pages:<\/p>");
-  
-  // TODO: Add Google search based on strSearchTerms
+  //Tell the visitor what site is at fault, what the search terms were
+  str+='<p> I\'m afraid your search engine got a bit confused. We presume you were looking for \"<strong>' + strSearchTerms + '<\/strong>\". <\/p>';
+  str+='<p> The best to do right now is click search on the pre-filled search box below. <\/p>';
+  document.write(str);
 }
+
 /* The broken (in-site) link */
 if (!blnSearchReferral) {
   strSite = strReferrer;
   strSite = strSite.split("/");
   strSite = strSite[2];
-  str+='<p> We recently redesigned this site. The page you are referring to must have moved. <\/p>';
+  str+='<p> We\'d recently redesigned this site. The location you are referring to is no longer valid. <\/p>';
   str+='<p> We think you will find one of the top-most links or our <a href="/blog/all">archives<\/a> useful <\/p>';
   document.write(str);
   // TODO: Add search results?
@@ -89,7 +89,8 @@ if (!blnSearchReferral) {
 /* This site had an incorrect link */
 blnInsiteReferral =((strReferrer.indexOf("http://arunrocks.com")>=0) || (strReferrer.indexOf("http://www.arunrocks.com") >=0))
 if (blnInsiteReferral) {
-  str+='<p> We recently redesigned this site and you have reached a non-existent page. Could be a typo. My bad! <\/p>';
+  str+='<p> Oops! This is embarrassing. We have seemed to have split all the tea<\/p>';
+  str+='<p> We\'d recently redesigned this site. Could be a typo. My bad! <\/p>';
   str+='<p> We think you will find one of the top-most links or our <a href="/blog/all">archives<\/a> useful <\/p>';
   document.write(str);
 }
@@ -106,7 +107,7 @@ if (blnInsiteReferral) {
 </script>
 
 <noscript>
-<p>I'm afraid we have run out of tea. Your page cannot be found. We are now in Limbo</p>
+<p>I'm afraid we have run out of tea. Your page cannot be found. </p>
 <h2>Things to try</h2>
 <ul>
   <li> Go back to the <a href="/blog">Blog page</a>
