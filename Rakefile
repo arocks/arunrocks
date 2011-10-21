@@ -39,6 +39,12 @@ namespace :rsync do
     system('rsync -aivhcz -e ssh --stats --delete --dry-run ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
   end
 
+  desc "rsync to local apache server"
+  task :local do
+    system('rsync -iavz --delete ./_site/ /var/www')
+    system("sudo /etc/init.d/apache2 restart") # Bounce server
+  end
+
   desc "rsync to production server"
   task :prod do
     system('rsync -aivhcz -e ssh --stats --delete ./_site/ arunvr@arunrocks.com:/home/arunvr/public_html/')
