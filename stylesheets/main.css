@@ -935,3 +935,18 @@ footer[role="siteinfo"] address {
         page-break-after: avoid;
     }
 }
+
+/* Stop SOPA specific styles */
+html {
+    background: black !important;
+}
+aside[role="sidebar"] {
+    color: #a0a0a0 !important;
+}
+aside[role="sidebar"] h1 {
+    text-shadow: 2px 1px 0px #111 !important;
+    color: #ccc !important;
+}
+aside[role="sidebar"] a {
+    color: #999 !important;;
+}
