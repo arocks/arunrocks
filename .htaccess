@@ -176,7 +176,7 @@ RewriteRule ^blog/archives/(.+)$ /blog/$1 [R=301]
 #   Planet Python, Kerala blog roll
 RewriteRule ^blog/feed/rss2/$ /blog/feed/  [R=301]
 RewriteRule ^blog/feed/$ /blog/feed/atom.xml
-RewriteRule ^blog/category/technical/python/feed/$ /blog/feed/atom.xml
+RewriteRule ^blog/category/technical/python/feed/$ /blog/pyfeed/atom.xml
  
 #  Browsers have the nasty habit of checking for /favicon.ico
 RewriteRule ^favicon.ico$ /images/favicon.ico 
