@@ -271,6 +271,7 @@ figure {
 img, object, video {
     max-width: 100%; /* Automatically scales images larger than the container. Consider this first: http://unstoppablerobotninja.com/entry/fluid-images/ */
     /* _width: 100%; /* IE6 doesn't support max-width, so we just use width. If the image is larger than the container, just uncomment this. If it is smaller than the container, uncomment and change the 100% value to an absolute one */
+    height: auto;
 }
 
 img {
