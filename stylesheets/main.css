@@ -613,6 +613,11 @@ article[role="post"] h5 {
     font-size: 1.1429em; /* 16px */ line-height: 1.3125em; /* 21px */ margin-top: 1.3125em; margin-bottom: 0em; 
 }
 
+article[role="post"] hr {
+    border-top: 2px dotted #999;
+    margin-bottom: 15px;
+}
+
 /* Creative Commons icon designed by Yusuke Kamiyamane */
 a[rel="license"] {
     color: #333;
