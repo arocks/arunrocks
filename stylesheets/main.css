@@ -621,6 +621,21 @@ article[role="post"] hr {
     margin-bottom: 15px;
 }
 
+article[role="post"] p code, article[role="post"] li code {
+    margin: 0 2px;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    border: 1px solid #9CAC7E;
+    background-color: #E7EFD7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
 /* Creative Commons icon designed by Yusuke Kamiyamane */
 a[rel="license"] {
     color: #333;

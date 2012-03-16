@@ -16,7 +16,8 @@ layout: base
 
 <!-- ================================================================================ -->
 <aside role="socialbutns" class="scrollbox"> 
-<span  class='st_fblike_hcount' ></span><span  class='st_twitter_hcount' displayText='Tweet'></span></span><span  class='st_plusone_hcount' ></span><span  class='st_sharethis_hcount' displayText='ShareThis'>
+
+<span  class='st_sharethis_hcount' displayText='ShareThis'>
 
 </aside> 
 
@@ -24,8 +25,8 @@ layout: base
 
 <!-- ================================================================================ -->
 <footer>
-    <!-- tags --> 
-    <ul class="posttags group">         {% for tag in page.tags limit: 3 %}
+    <!-- tags: {{ page.tags|join:", " }} --> 
+    <ul class="posttags group">         {% for tag in page.tags limit: 5 %}
         <li><a href="/tags/{{tag | replace:' ', '-' | downcase }}" rel="tag" title="See all posts tagged with {{tag}}" class="posttag">
             <span class="arrow"></span>
             {{ tag }}

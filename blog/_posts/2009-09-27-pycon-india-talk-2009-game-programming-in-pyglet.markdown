@@ -20,6 +20,10 @@ You can download the [game source code][gamesrc] and [presentation slides (PDF)]
 
 UPDATE: The video of the [lightning talk][videolink] is now available and has been added below:
 
+UPDATE 2: Fruitcatch source code is on [github][github] now. 
+
+[github]: https://github.com/arocks/fruitcatch
+
 <!--more-->
 
 <embed src="http://blip.tv/play/AYGlulYC" type="application/x-shockwave-flash" width="480" height="390" allowscriptaccess="always" allowfullscreen="true"></embed> 
