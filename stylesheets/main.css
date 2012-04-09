@@ -389,7 +389,7 @@ body {
     margin: 0 auto;
 }
 
-header[role="banner"] {
+header#banner {
     background: url(../images/bg-top-moon.png) center bottom no-repeat;
     display: block;
     position: relative;
@@ -399,7 +399,7 @@ header[role="banner"] {
 }
 
 /* Logo */
-h1[role="logo"] a {
+h1#logo a {
     display: block;
     position: absolute;
     width: 177px;
@@ -408,25 +408,25 @@ h1[role="logo"] a {
     overflow: hidden;
     background: url(../images/logo.png) no-repeat;
 }    
-h1[role="logo"] a:hover {
+h1#logo a:hover {
     margin-top: 4px;
     -webkit-transition: all 0.5s ease; 
 }
 /* Navigation */
-header[role="banner"] nav {
+header#banner nav {
     max-width: 520px;
     margin: 0px auto;
 }
-header[role="banner"] nav ul {
+header#banner nav ul {
     clear: both;
     list-style: none;
 }
 
-header[role="banner"] nav li {
+header#banner nav li {
     float: left;
     margin-right: 30px;
 }
-header[role="banner"] nav li a {
+header#banner nav li a {
     font-family: 'PT Sans', sans-serif;
     font-size: 1.2em; 
     display: block;
@@ -435,23 +435,23 @@ header[role="banner"] nav li a {
     color: #ddd;
 }
 
-header[role="banner"] nav li a sub {
+header#banner nav li a sub {
     font-family: 'PT Sans', sans-serif;
     font-size: 0.525em; 
 }
 
-header[role="banner"] nav li a:hover {
+header#banner nav li a:hover {
     border-bottom: 4px solid #fcffb0;
 }
 
-header[role="banner"] a.cur {
+header#banner a.cur {
     color: #76b5ba;
     text-shadow: 2px 1px 0px #333;
 }
 
 /* Show interesting banner animations */
 
-header[role="banner"] #actor1 {
+header#banner #actor1 {
     position: absolute;
     left: 40%;
     top: 135px;
@@ -461,7 +461,7 @@ header[role="banner"] #actor1 {
     height: 165px;
 }
 
-header[role="banner"]:hover #actor1 {
+header#banner:hover #actor1 {
     opacity: 0;
 
      -moz-transition: all 0.9s ease-in;
@@ -475,7 +475,7 @@ header[role="banner"]:hover #actor1 {
     -webkit-transition-delay: 0.3s;
 }
 
-header[role="banner"] #actor2 {
+header#banner #actor2 {
     opacity: 0;
     position: absolute;
     left: 40%;
@@ -486,7 +486,7 @@ header[role="banner"] #actor2 {
     height: 165px;
 }
 
-header[role="banner"]:hover #actor2 {
+header#banner:hover #actor2 {
     opacity: 1;
 
      -moz-transition: all 0.9s ease-in;
@@ -554,8 +554,8 @@ section#container{
 }
 /* Custom Fonts */
 
-article[role="post"] h1, article[role="post"] h2, article[role="post"] h3, article[role="post"] h4, 
-aside[role="sidebar"] h1, aside[role="sidebar"] h2, aside[role="sidebar"] h3
+article#post h1, article#post h2, article#post h3, article#post h4, 
+aside#sidebar h1, aside#sidebar h2, aside#sidebar h3
 {
     font-family: 'Arvo', serif;
 }
@@ -563,7 +563,7 @@ aside[role="sidebar"] h1, aside[role="sidebar"] h2, aside[role="sidebar"] h3
 /* Typo graphy with vertical rhythm from http://drewish.com/tools/vertical-rhythm */
 /* Setting: Base: 14, Line height: 21 */
 
-article[role="post"] p, article[role="post"] li {
+article#post p, article#post li {
     font-size: 1em; /* 14px */ 
     line-height: 1.5em; /* 21px */ 
     margin: 0 0 1.5em 0; 
@@ -572,14 +572,14 @@ article[role="post"] p, article[role="post"] li {
 
 /* Inter-post gaps */
 /*   (Cannot use last-child since there is a <p> element ‘More posts…” below the last article)*/
-section#container article[role="post"] {
+section#container article#post {
     margin-bottom: 6em;
 }
-section#container article[role="post"]:last-of-type {
+section#container article#post:last-of-type {
     margin-bottom: 2em;
 }
 /* Drop cap */
-article[role="post"] h1 + p:first-letter {
+article#post h1 + p:first-letter {
     float: left;
 	font-size: 3em;
 	line-height: .9em;
@@ -587,41 +587,41 @@ article[role="post"] h1 + p:first-letter {
 	padding: 2px;
 }
 
-article[role="post"] h1 a {
+article#post h1 a {
     color: #081640;
 }
 
-article[role="post"] h1 a:hover {
+article#post h1 a:hover {
     color: #C60;
 }
 
-article[role="post"] h1 {
+article#post h1 {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
     letter-spacing: -1px;
     font-size: 2.2857em; /* 32px */ line-height: 1.3125em; /* 42px */ margin-top: 0.3563em; margin-bottom: 0.3em; 
 }
 
-article[role="post"] h2 {
+article#post h2 {
     font-size: 1.5714em; /* 22px */ line-height: 1.9091em; /* 42px */ margin-top: 0.5545em; margin-bottom: 0.4em; }
 
-article[role="post"] h3 {
+article#post h3 {
     font-size: 1.4286em; /* 20px */ line-height: 1.05em; /* 21px */ margin-top: 0.55em; margin-bottom: 0.5em; 
 }
 
-article[role="post"] h4 {
+article#post h4 {
     font-size: 1.2857em; /* 18px */ line-height: 1.1667em; /* 21px */ margin-top: 1.1667em; margin-bottom: 0em; 
 }
 
-article[role="post"] h5 {
+article#post h5 {
     font-size: 1.1429em; /* 16px */ line-height: 1.3125em; /* 21px */ margin-top: 1.3125em; margin-bottom: 0em; 
 }
 
-article[role="post"] hr {
+article#post hr {
     border-top: 2px dotted #999;
     margin-bottom: 15px;
 }
 
-article[role="post"] p code, article[role="post"] li code {
+article#post p code, article#post li code {
     margin: 0 2px;
     padding: 2px 5px;
     font-size: 0.8em;
@@ -757,7 +757,7 @@ ul.navlinks a[rel="next"]:hover:after {
     right: -0.2em;
 }
 /* Sidebar */
-aside[role="sidebar"] {
+aside#sidebar {
     position: absolute;
     top: 0;
     left: 620px;
@@ -765,7 +765,7 @@ aside[role="sidebar"] {
     padding: 85px 10px 0 10px;
     color: #223f59;
 }
-aside[role="sidebar"] h1 {
+aside#sidebar h1 {
     font-size: 1em; /* 14px */ 
     line-height: 1.5em; /* 21px */ 
     margin-bottom: 0.4em;
@@ -773,16 +773,16 @@ aside[role="sidebar"] h1 {
     text-shadow: 2px 1px 0px #fff;
 }
 /* Remove dropcap */
-article[role="sidebar"] h1 + p:first-letter {
+aside#sidebar h1 + p:first-letter {
     font-size: 1em;
     line-height: 1.5em;
     margin: 0 0 1.5em 0;
     margin-bottom: 1em;
 }
-aside[role="sidebar"] ul {
+aside#sidebar ul {
     list-style: none;
 }
-aside[role="sidebar"] li {
+aside#sidebar li {
     font-size: 0.8em; /* 14px */ 
     line-height: 1em; /* 21px */ 
     margin: 0 0 1.5em 0;
@@ -813,14 +813,14 @@ aside[role="sidebar"] li {
     display: inline-block;
 }
 
-aside[role="sidebar"] a {
+aside#sidebar a {
     color: #333;
 }
-aside[role="sidebar"] a:hover {
+aside#sidebar a:hover {
     opacity: 0.8;
 }
 /* Footer */
-footer[role="siteinfo"] {
+footer#siteinfo {
     background: #333 url(../images/bg-footer.png);
     color: #ccc;
     max-width: 520px;
@@ -830,10 +830,10 @@ footer[role="siteinfo"] {
      -moz-box-shadow: 0px 5px 20px 0px  rgba(0, 0, 0, 0.3);
           box-shadow: 0px 5px 20px 0px  rgba(0, 0, 0, 0.3);
 } 
-footer[role="siteinfo"] a {
+footer#siteinfo a {
     color: #fff;
 }
-form[role="search"] {
+form#search {
     width: 250px;
     float: right;
 }
@@ -843,7 +843,7 @@ form[role="search"] {
     float: left;
     margin-bottom: 0.5em;
 }
-footer[role="siteinfo"] address {
+footer#siteinfo address {
     font-size: 0.9em;
     margin: 2em 0 0.1em 0;
     text-align: center;
@@ -872,7 +872,7 @@ footer[role="siteinfo"] address {
 
 /* Below 960px: fold-down sidebar, remove coffe-cup table banner, compress top links */
 @media only screen and  (max-width: 960px) {
-    aside[role="sidebar"] {
+    aside#sidebar {
         position: relative;
         top: auto;
         left: auto;
@@ -880,18 +880,18 @@ footer[role="siteinfo"] address {
         padding: 10px 0;
         border-top: 2px dotted #999;
     }
-    header[role="banner"] nav li a sub {
+    header#banner nav li a sub {
         display: none;
     }
-    header[role="banner"] nav li {
+    header#banner nav li {
         margin-right: 10px;
         margin-left: 10px;
     }
-    header[role="banner"] nav li a {
+    header#banner nav li a {
         width: 60px;
         height: 1.8em;
     }
-    header[role="banner"] nav ul {
+    header#banner nav ul {
         margin-left: 135px;
     }
 }
@@ -901,19 +901,19 @@ footer[role="siteinfo"] address {
     html {
         background: #081640;
     }
-    h1[role="logo"] a {
+    h1#logo a {
         position: relative;
         margin: 0 auto;
     }
-    header[role="banner"] nav ul {
+    header#banner nav ul {
         margin: 0 auto;
         padding-left: 56px;
     }
-    header[role="banner"] {
+    header#banner {
         background: transparent;
         height: 100px;
     }
-    header[role="banner"] nav li a {
+    header#banner nav li a {
         font-size: 1em;
         width: 45px;
     }

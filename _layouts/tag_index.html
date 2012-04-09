@@ -2,7 +2,7 @@
 layout: base
 title: 'Tags Archive'
 ---
-<article role="post">
+<article id="post">
 <h1> Tag: {{ page.tag }} </h1>
 <ol>
   {% for post in site.tags[page.tag] %}
@@ -18,7 +18,7 @@ title: 'Tags Archive'
   </li>
 </ol>
 <!-- ================================================================================ -->
-<aside role="sidebar"> 
+<aside id="sidebar"> 
 {% include about_me.html %}
 </aside> 
 </article> 

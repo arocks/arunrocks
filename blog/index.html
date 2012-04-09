@@ -3,7 +3,7 @@ layout: manyposts
 title: Blog
 ---
 {% for post in site.posts limit:4 %}
-<article role="post"><header class="postdate"> 
+<article id="post"><header class="postdate"> 
     <time pubdate datetime="{{ post.date  | date:"%Y-%m-%d"}}"> <abbr title="{{ post.date  | date:"%A, %d %B %Y"}}">
       <span class="dd">{{ post.date  | date:"%d"}}</span> {{ post.date  | date:"%b %Y"}} </abbr>
     </time> 
