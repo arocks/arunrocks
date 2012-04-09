@@ -501,7 +501,7 @@ header[role="banner"]:hover #actor2 {
 
 /* Main post */
 
-section[role="container"]{
+section#container{
     max-width: 520px;
     position: relative;
     color: #081640; 
@@ -572,10 +572,10 @@ article[role="post"] p, article[role="post"] li {
 
 /* Inter-post gaps */
 /*   (Cannot use last-child since there is a <p> element ‘More posts…” below the last article)*/
-section[role="container"] article[role="post"] {
+section#container article[role="post"] {
     margin-bottom: 6em;
 }
-section[role="container"] article[role="post"]:last-of-type {
+section#container article[role="post"]:last-of-type {
     margin-bottom: 2em;
 }
 /* Drop cap */
@@ -953,19 +953,6 @@ footer[role="siteinfo"] address {
 
     a, a:visited {
         text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /* Do not show javascript and internal links */
-    a[href^="javascript:"]:after, a[href^="#"]:after {
-        content: ""; 
     }
 
     /* Printing Tables: css-discuss.incutio.com/wiki/Printing_Tables */
