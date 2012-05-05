@@ -10,8 +10,9 @@ would be asynchronously loaded. There are various optimisations in the `.htacces
 
 Install 
 -------
-* git clone in `_compiled`  -- this pushes to master 
-* Check out the `source` branch  
+
+* Clone the github repository
+* Check out the `master` branch  
 
 Prerequisites
 -------------
@@ -19,8 +20,9 @@ Prerequisites
 * Ruby (works with 1.8)
 * Speed-up related posts in GSL:
 
-    $ sudo apt-get install gsl-bin libgsl0-dev
-    $ sudo gem install gsl classifier
+```sudo apt-get install gsl-bin libgsl0-dev
+sudo gem install gsl classifier
+```
 
 Rakefile
 -------------
