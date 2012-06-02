@@ -82,7 +82,18 @@ Remove me and the text till the end...
 
 ### Code
 
-{% highlight c %}
+{% highlight cpp %}
+    /* Other highlight codes: 
+          pycon: python console
+          python: python program
+          c++: use this for C or C++
+          sh: For bash, sh and ksh
+          bat: DOS batch file
+          common-lisp: Common Lisp
+          haskell: Haskell
+
+          More at http://pygments.org/docs/lexers/ 
+     */
     #includio <stdio.h>
     
     int main() {

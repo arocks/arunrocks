@@ -22,7 +22,7 @@
 
 <!-- ================================================================================ -->
 <body>
-<a name="top"></a>
+<a id="top" name="top"></a>
 <header id="banner"> 
     <h1 id="logo"><a href="/" rel="index"> 
         arunrocks.com
@@ -44,6 +44,7 @@
 {{ content }}
 </section>
 <!-- ================================================================================ -->
+<a id="bottom" name="bottom"></a>
 <footer id="siteinfo"> 
 <div class="group">
 <p class="sitelinks"> Browse: 
@@ -92,6 +93,9 @@
     },
     {
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js',
+    },
+    {
+      load: '/javascripts/jquery-hotkeys.js'
     },
     {
       load: '/javascripts/site.js',
