@@ -579,7 +579,7 @@ section#container article#post:last-of-type {
     margin-bottom: 2em;
 }
 /* Drop cap */
-article#post h1 + p:first-letter {
+article#post h1 + p:first-letter, article#post .scrollbox + p:first-letter  {
     float: left;
 	font-size: 3em;
 	line-height: .9em;
@@ -634,6 +634,11 @@ article#post p code, article#post li code {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+}
+
+/* li fix for <p> inside for Firefox */
+article#post li > p:first-child  {
+    display:inline;
 }
 
 /* Creative Commons icon designed by Yusuke Kamiyamane */
