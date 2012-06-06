@@ -596,9 +596,14 @@ article#post h1 a:hover {
 }
 
 article#post h1 {
+    border-top: 2px dotted #999999;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
     letter-spacing: -1px;
     font-size: 2.2857em; /* 32px */ line-height: 1.3125em; /* 42px */ margin-top: 0.3563em; margin-bottom: 0.3em; 
+}
+/* Article headline not Comments headline */
+article#post h1:first-child  {
+    margin-bottom: 0.6em;
 }
 
 article#post h2 {
@@ -704,7 +709,6 @@ ul.posttags li {
 /* Navigation links */
 ul.navlinks {
     border-top: 2px dotted #999;
-    border-bottom: 2px dotted #999;
     padding: 4px 0;
     list-style: none;
     margin-bottom: 0;
@@ -856,12 +860,7 @@ footer#siteinfo address {
 
 /* scrollbox */
 .scrollbox {
-    border-top: 2px dotted #999;
-    padding: 4px 0;
-    margin: 0.6em 0 1.0em 0;
-    width: 140px;
-    height: 20px;
-    overflow: hidden;
+    line-height: 3em;
 }
 /* Archives page
 ---------------------------------------- */
