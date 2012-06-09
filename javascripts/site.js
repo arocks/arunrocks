@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function($) {
     console.log("init ArunRocks...");                      
 
     go_page = function(id) {
