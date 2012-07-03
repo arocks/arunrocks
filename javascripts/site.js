@@ -24,4 +24,12 @@ jQuery(document).ready(function($) {
 
     $("#socialbutns").append(
         '<a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>');
+    // 2. Google's +1
+    window.___gcfg = {lang: 'en-GB'};
+
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
 });
