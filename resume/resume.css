@@ -193,7 +193,7 @@ float:right;
 
     padding: 1in .75in .75in .75in;
     margin: .5in auto;
-    border-bottom: solid 4px #F23A29;
+    border-bottom: solid 4px #1B818C;
   }
 
   #pdflink {
@@ -259,25 +259,17 @@ h3:after
     border-color: #4C120D #4C120D transparent transparent;  
 }
 
-div#achievements h3{
-    background: #BFB71D;   
-}
-div#achievements h3:after { border-color: #4C490B #4C490B transparent transparent; }
-
-div#skills h3{
+div#skills h3, div#jobs h3{
     background: #1B818C;   
 }
-div#skills h3:after { border-color: #0F454C #0F454C transparent transparent; }
+div#skills h3:after, div#jobs h3:after 
+{ border-color: #0F454C #0F454C transparent transparent; }
 
-div#education h3{
+div#achievements h3, div#education h3{
     background: #F2C53D;   
 }
-div#education h3:after { border-color: #4C3E13 #4C3E13 transparent transparent; }
-
-div#jobs h3{
-    background: #A9D9BE;   
-}
-div#education h3:after { border-color: #3C4C43 #3C4C43 transparent transparent; }
+div#achievements h3:after, div#education h3:after
+{ border-color: #4C3E13 #4C3E13 transparent transparent; }
 
 a, a:hover, a:active { 
     color: #562e34; 
