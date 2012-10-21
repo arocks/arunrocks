@@ -879,6 +879,9 @@ footer#siteinfo address {
 
 /* Below 960px: fold-down sidebar, remove coffe-cup table banner, compress top links */
 @media only screen and  (max-width: 960px) {
+    h1#logo {
+        margin-left: 0.5em;
+    }
     aside#sidebar {
         position: relative;
         top: auto;
@@ -906,19 +909,37 @@ footer#siteinfo address {
 /* Below 600px: top texture turns solid blue, compress top links further */
 @media only screen and  (max-width: 600px) {
     html {
-        background: #081640;
+        background: #000; /* previously was #081640 */
+    }
+    section#container{
+        padding: 5px 24px 10px 30px;
+    }
+    h1 {
+        margin: 0 auto;
     }
     h1#logo a {
         position: relative;
-        margin: 0 auto;
+        margin: 0;
+    }
+    header#banner {
+        height: 100px;
+
+        background: #000;
+        background-repeat: repeat-x;
+        /* Safari 4-5, Chrome 1-9 */
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#081640));
+        /* Safari 5.1, Chrome 10+ */
+        background: -webkit-linear-gradient(top, #000000, #081640);
+        /* Opera 11.10+ */
+        background: -o-linear-gradient(top, #000000, #081640);
+        /* Firefox 3.6+ */
+        background-image: -moz-linear-gradient(top, #000000, #081640);
+        /* IE 10+ */
+        background-image: -ms-linear-gradient(top, #000000, #081640);
     }
     header#banner nav ul {
         margin: 0 auto;
         padding-left: 56px;
-    }
-    header#banner {
-        background: transparent;
-        height: 100px;
     }
     header#banner nav li a {
         font-size: 1em;
