@@ -193,7 +193,7 @@ float:right;
 
     padding: 1in .75in .75in .75in;
     margin: .5in auto;
-    border-bottom: solid 4px #9B2E34;
+    border-bottom: solid 4px #F23A29;
   }
 
   #pdflink {
@@ -215,6 +215,9 @@ float:right;
   }
 }
 
+/* Color Scheme: HBR Corporate Garage (https://kuler.adobe.com/#themeID/2088040)
+*/
+
 h1 {
     font-family: 'Franchise', sans-serif;
     font-size:30pt;
@@ -226,7 +229,7 @@ h2, h3 {
 }
 
 h1, h3 {
-    color: #9B2E34;
+    color: #333;
 }
 
 h1 {
@@ -236,7 +239,7 @@ h1 {
 h3 {
     width: 200px;
     color: #FFF;
-    background: #9B2E34;
+    background: #F23A29;
     padding: 4px;
     position: relative;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
@@ -253,8 +256,28 @@ h3:after
     top: 100%;  
     border-width: 5px 8px;  
     border-style: solid;  
-    border-color: #562e34 #562e34 transparent transparent;  
+    border-color: #4C120D #4C120D transparent transparent;  
 }
+
+div#achievements h3{
+    background: #BFB71D;   
+}
+div#achievements h3:after { border-color: #4C490B #4C490B transparent transparent; }
+
+div#skills h3{
+    background: #1B818C;   
+}
+div#skills h3:after { border-color: #0F454C #0F454C transparent transparent; }
+
+div#education h3{
+    background: #F2C53D;   
+}
+div#education h3:after { border-color: #4C3E13 #4C3E13 transparent transparent; }
+
+div#jobs h3{
+    background: #A9D9BE;   
+}
+div#education h3:after { border-color: #3C4C43 #3C4C43 transparent transparent; }
 
 a, a:hover, a:active { 
     color: #562e34; 
