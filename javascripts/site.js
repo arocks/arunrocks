@@ -13,23 +13,4 @@ jQuery(document).ready(function($) {
     $(document).bind('keydown', 'ctrl+right',     function() {go_page('next');});
     $(document).bind('keydown', 'alt+f',     function() {go_page('next');});
     
-    // Add social buttons
-    // 1. Hacker News
-    (function(d, t) {
-        var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        g.src = '//hnbutton.appspot.com/static/hn.js';
-        s.parentNode.insertBefore(g, s);
-    }(document, 'script'));
-
-    $("#socialbutns").append(
-        '<a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>');
-    // 2. Google's +1
-    window.___gcfg = {lang: 'en-GB'};
-
-    (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
 });

@@ -8,7 +8,7 @@
     * Selectors beggining with an asterisk (*selector: property) target only IE6 and IE7
 */
 
-@import url(http://fonts.googleapis.com/css?family=Arvo:700);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 @import url(pygments.css);
 
@@ -557,7 +557,7 @@ section#container{
 article#post h1, article#post h2, article#post h3, article#post h4, 
 aside#sidebar h1, aside#sidebar h2, aside#sidebar h3
 {
-    font-family: 'Arvo', serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Typo graphy with vertical rhythm from http://drewish.com/tools/vertical-rhythm */
@@ -598,7 +598,6 @@ article#post h1 a:hover {
 article#post h1 {
     border-top: 2px dotted #999999;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
-    letter-spacing: -1px;
     font-size: 2.2857em; /* 32px */ line-height: 1.3125em; /* 42px */ margin-top: 0.3563em; margin-bottom: 0.3em; 
 }
 /* Article headline not Comments headline */
@@ -656,6 +655,7 @@ a[rel="license"] {
 /* Post Tags (Shaped in CSS) based off http://www.inserthtml.com/2012/02/css-tag-icons/ */
 ul.posttags {
     list-style: none;
+    margin-top: 25px;
     margin-bottom: 30px;
 }
 ul.posttags li {
