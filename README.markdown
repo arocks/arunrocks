@@ -1,3 +1,5 @@
+> Note: As of 2015, the blogging platform of arunrocks.com has [moved](http://arunrocks.com/moving-blogs-to-pelican/) to pelican. Read more about it here: [Moving Blogs to Pelican](http://arunrocks.com/moving-blogs-to-pelican/)
+
 http://arunrocks.com - Arun Ravindran's online presence
 
 The entire site has been written in a clean and easy to read markup leveraging new semantic
